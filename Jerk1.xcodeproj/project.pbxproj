@@ -18,6 +18,11 @@
 		B44591711D28755E001A8E26 /* Jerk1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B44591701D28755E001A8E26 /* Jerk1UITests.m */; };
 		B44591C51D28BF28001A8E26 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44591C41D28BF28001A8E26 /* ChatViewController.m */; };
 		B44591C71D28D13E001A8E26 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44591C61D28D13E001A8E26 /* MapKit.framework */; };
+		B44591D81D2B4DF6001A8E26 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44591D51D2B4DF6001A8E26 /* FBSDKCoreKit.framework */; };
+		B44591D91D2B4DF6001A8E26 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44591D61D2B4DF6001A8E26 /* FBSDKLoginKit.framework */; };
+		B44591DA1D2B4DF6001A8E26 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44591D71D2B4DF6001A8E26 /* FBSDKShareKit.framework */; };
+		B44591DD1D2B5125001A8E26 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44591DC1D2B5125001A8E26 /* LoginViewController.m */; };
+		B44591E01D2B5771001A8E26 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44591DF1D2B5771001A8E26 /* MainMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,13 @@
 		B44591C31D28BF28001A8E26 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		B44591C41D28BF28001A8E26 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		B44591C61D28D13E001A8E26 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B44591D51D2B4DF6001A8E26 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../Documents/FacebookSDK/FacebookSDKs-iOS-4.13.1/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		B44591D61D2B4DF6001A8E26 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../Documents/FacebookSDK/FacebookSDKs-iOS-4.13.1/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		B44591D71D2B4DF6001A8E26 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../Documents/FacebookSDK/FacebookSDKs-iOS-4.13.1/FBSDKShareKit.framework"; sourceTree = "<group>"; };
+		B44591DB1D2B5125001A8E26 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B44591DC1D2B5125001A8E26 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B44591DE1D2B5771001A8E26 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		B44591DF1D2B5771001A8E26 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +78,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B44591DA1D2B4DF6001A8E26 /* FBSDKShareKit.framework in Frameworks */,
 				B44591C71D28D13E001A8E26 /* MapKit.framework in Frameworks */,
+				B44591D81D2B4DF6001A8E26 /* FBSDKCoreKit.framework in Frameworks */,
+				B44591D91D2B4DF6001A8E26 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +105,7 @@
 		B445913C1D28755D001A8E26 = {
 			isa = PBXGroup;
 			children = (
-				B44591C61D28D13E001A8E26 /* MapKit.framework */,
+				B44591D41D2B4CF3001A8E26 /* Frameworks */,
 				B44591471D28755E001A8E26 /* Jerk1 */,
 				B44591641D28755E001A8E26 /* Jerk1Tests */,
 				B445916F1D28755E001A8E26 /* Jerk1UITests */,
@@ -124,6 +139,10 @@
 				B44591481D28755E001A8E26 /* Supporting Files */,
 				B44591C31D28BF28001A8E26 /* ChatViewController.h */,
 				B44591C41D28BF28001A8E26 /* ChatViewController.m */,
+				B44591DB1D2B5125001A8E26 /* LoginViewController.h */,
+				B44591DC1D2B5125001A8E26 /* LoginViewController.m */,
+				B44591DE1D2B5771001A8E26 /* MainMenuViewController.h */,
+				B44591DF1D2B5771001A8E26 /* MainMenuViewController.m */,
 			);
 			path = Jerk1;
 			sourceTree = "<group>";
@@ -152,6 +171,17 @@
 				B44591721D28755E001A8E26 /* Info.plist */,
 			);
 			path = Jerk1UITests;
+			sourceTree = "<group>";
+		};
+		B44591D41D2B4CF3001A8E26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B44591C61D28D13E001A8E26 /* MapKit.framework */,
+				B44591D51D2B4DF6001A8E26 /* FBSDKCoreKit.framework */,
+				B44591D61D2B4DF6001A8E26 /* FBSDKLoginKit.framework */,
+				B44591D71D2B4DF6001A8E26 /* FBSDKShareKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,9 +317,11 @@
 			files = (
 				B44591531D28755E001A8E26 /* SecondViewController.m in Sources */,
 				B445914D1D28755E001A8E26 /* AppDelegate.m in Sources */,
+				B44591DD1D2B5125001A8E26 /* LoginViewController.m in Sources */,
 				B44591C51D28BF28001A8E26 /* ChatViewController.m in Sources */,
 				B44591501D28755E001A8E26 /* FirstViewController.m in Sources */,
 				B445914A1D28755E001A8E26 /* main.m in Sources */,
+				B44591E01D2B5771001A8E26 /* MainMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,9 +461,11 @@
 		B44591761D28755E001A8E26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "~/Documents/FacebookSDK/";
 				INFOPLIST_FILE = Jerk1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-29T39282B.luok.Jerk1";
@@ -444,9 +478,11 @@
 		B44591771D28755E001A8E26 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "~/Documents/FacebookSDK";
 				INFOPLIST_FILE = Jerk1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-29T39282B.luok.Jerk1";
@@ -523,6 +559,7 @@
 				B44591771D28755E001A8E26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B44591781D28755E001A8E26 /* Build configuration list for PBXNativeTarget "Jerk1Tests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +568,7 @@
 				B445917A1D28755E001A8E26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B445917B1D28755E001A8E26 /* Build configuration list for PBXNativeTarget "Jerk1UITests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +577,7 @@
 				B445917D1D28755E001A8E26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
