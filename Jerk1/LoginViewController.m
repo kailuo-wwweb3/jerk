@@ -9,7 +9,7 @@
 #import "LoginViewController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
-#import "SecondViewController.h"
+#import "ProfileViewController.h"
 
 @interface LoginViewController () <FBSDKLoginButtonDelegate>
 
@@ -20,15 +20,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    UIButton *myLoginButton=[UIButton buttonWithType:UIButtonTypeCustom];
-//    myLoginButton.backgroundColor=[UIColor darkGrayColor];
-//    myLoginButton.frame=CGRectMake(0,0,180,40);
-//    myLoginButton.center = self.view.center;
-//    [myLoginButton setTitle: @"My Login Button" forState: UIControlStateNormal];
-//    [myLoginButton
-//     addTarget:self
-//     action:@selector(loginButtonClicked) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:myLoginButton];
     
     FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
     // Optional: Place the button in the center of your view.
@@ -37,29 +28,11 @@
     [self.view addSubview:loginButton];
 }
 
-//-(void)loginButtonClicked
-//{
-//    FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
-//    [login
-//     logInWithReadPermissions: @[@"public_profile"]
-//     fromViewController:self
-//     handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
-//         if (error) {
-//             NSLog(@"Process error");
-//         } else if (result.isCancelled) {
-//             NSLog(@"Cancelled");
-//         } else {
-//            NSLog(@"Logged in");
-//            [self performSegueWithIdentifier:@"goToProfile" sender:nil];
-//         }
-//     }];
-//}
-
 - (void)  loginButton:(FBSDKLoginButton *)loginButton
 didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
                 error:(NSError *)error {
     NSLog(@"Logged in");
-    [self performSegueWithIdentifier:@"goToProfile" sender:self];
+    [self performSegueWithIdentifier:@"goToMainMenu" sender:self];
 }
 
 - (void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton {

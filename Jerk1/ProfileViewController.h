@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ChatViewController.h"
 
-@interface SecondViewController : UIViewController
+@interface ProfileViewController : UIViewController
 
 
 @end

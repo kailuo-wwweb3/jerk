@@ -6,15 +6,15 @@
 //  Copyright © 2016 Kai Luo. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "ProfileViewController.h"
 
-@interface SecondViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface ProfileViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *personalAttribute;
 @property (weak, nonatomic) IBOutlet UITableView *reviewComments;
 
 @end
 
-@implementation SecondViewController
+@implementation ProfileViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

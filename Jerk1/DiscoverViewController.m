@@ -6,13 +6,13 @@
 //  Copyright © 2016 Kai Luo. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "DiscoverViewController.h"
 
-@interface FirstViewController () <UISearchBarDelegate>
+@interface DiscoverViewController () <UISearchBarDelegate>
 
 @end
 
-@implementation FirstViewController
+@implementation DiscoverViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
