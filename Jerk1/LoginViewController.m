@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <FBSDKCoreKit/FBSDKAccessToken.h>
 #import "ProfileViewController.h"
 
 @interface LoginViewController () <FBSDKLoginButtonDelegate>
@@ -26,6 +27,12 @@
     loginButton.center = self.view.center;
     loginButton.delegate = self;
     [self.view addSubview:loginButton];
+    if ([FBSDKAccessToken currentAccessToken]) {
+        [self performSegueWithIdentifier:@"goToMainMenu" sender:self];
+        NSLog(@"logged in");
+    } else {
+        NSLog(@"Not logged in");
+    }
 }
 
 - (void)  loginButton:(FBSDKLoginButton *)loginButton

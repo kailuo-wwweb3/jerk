@@ -56,15 +56,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (tableView == self.personalAttribute) {
     } else {
-        ChatViewController *chatViewController = [[ChatViewController alloc] init];
-        [self.navigationController pushViewController:chatViewController animated:YES];
+        [self performSegueWithIdentifier:@"goToChatView" sender:nil];
     }
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

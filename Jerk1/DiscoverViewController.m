@@ -8,7 +8,7 @@
 
 #import "DiscoverViewController.h"
 
-@interface DiscoverViewController () <UISearchBarDelegate>
+@interface DiscoverViewController () <UISearchBarDelegate, MKMapViewDelegate>
 
 @end
 
@@ -20,6 +20,7 @@
     self.navigationItem.title = @"Discover";
     [self.mapView setCenterCoordinate:self.mapView.userLocation.location.coordinate animated:YES];
     self.searchBar.delegate = self;
+    self.mapView.delegate = self;
 
 }
 
@@ -44,4 +45,17 @@
     }
 }
 
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
+    NSLog(@"tab");
+    [self performSegueWithIdentifier:@"reviewPerson" sender:nil];
+}
+
+- (nullable MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+    MKAnnotationView *view = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"pin"];
+    view.canShowCallout = YES;
+    view.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    return view;
+
+}
 @end

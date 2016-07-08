@@ -23,6 +23,7 @@
 		B44591DA1D2B4DF6001A8E26 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44591D71D2B4DF6001A8E26 /* FBSDKShareKit.framework */; };
 		B44591DD1D2B5125001A8E26 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44591DC1D2B5125001A8E26 /* LoginViewController.m */; };
 		B44591E01D2B5771001A8E26 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44591DF1D2B5771001A8E26 /* MainMenuViewController.m */; };
+		B4480DE61D2F6C5E00C6B667 /* ReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4480DE51D2F6C5E00C6B667 /* ReviewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		B44591DC1D2B5125001A8E26 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		B44591DE1D2B5771001A8E26 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		B44591DF1D2B5771001A8E26 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		B4480DE41D2F6C5E00C6B667 /* ReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewViewController.h; sourceTree = "<group>"; };
+		B4480DE51D2F6C5E00C6B667 /* ReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,8 @@
 				B44591DC1D2B5125001A8E26 /* LoginViewController.m */,
 				B44591DE1D2B5771001A8E26 /* MainMenuViewController.h */,
 				B44591DF1D2B5771001A8E26 /* MainMenuViewController.m */,
+				B4480DE41D2F6C5E00C6B667 /* ReviewViewController.h */,
+				B4480DE51D2F6C5E00C6B667 /* ReviewViewController.m */,
 			);
 			path = Jerk1;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 			files = (
 				B44591531D28755E001A8E26 /* ProfileViewController.m in Sources */,
 				B445914D1D28755E001A8E26 /* AppDelegate.m in Sources */,
+				B4480DE61D2F6C5E00C6B667 /* ReviewViewController.m in Sources */,
 				B44591DD1D2B5125001A8E26 /* LoginViewController.m in Sources */,
 				B44591C51D28BF28001A8E26 /* ChatViewController.m in Sources */,
 				B44591501D28755E001A8E26 /* DiscoverViewController.m in Sources */,
