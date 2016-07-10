@@ -25,6 +25,9 @@
     self.reviewComments.dataSource = self;
     self.reviewComments.delegate = self;
     self.navigationItem.title = @"Profile";
+    
+    self.tabBarItem.title = @"Me";
+    [self.tabBarController.viewControllers objectAtIndex:1].tabBarItem.title = @"Discover";
 
 }
 
